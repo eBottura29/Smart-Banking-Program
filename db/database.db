@@ -1,8 +1,15 @@
 {
     "ADMIN": {
         "password": "admin000",
-        "currency": "EUR",
+        "currency": "USD",
         "balance": 0,
-        "activated": True
+        "activated": True,
+        "card": {
+            "number": 4539657457661162,
+            "expiration": "08/32",
+            "card": "VISA",
+            "type": "CREDIT",
+            "CVC": 960
+        }
     }
 }

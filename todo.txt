@@ -3,6 +3,8 @@ FEATURES (main.py):
 2. log out and stay logged out
 3. add/remove money from balance
 4. change currency and update balance according to currency
+5. register and unregister card from account
+5.1. verify existance of card
 
 FEATURES (admin.py):
 1. create account

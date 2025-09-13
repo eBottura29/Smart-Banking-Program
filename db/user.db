@@ -1,6 +1,4 @@
 {
-    "name": "",
-    "balance": 0,
-    "currency": "",
-    "logged in": False
+    "logged in": False,
+    "account": ""
 }

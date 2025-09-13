@@ -1,0 +1,1 @@
+# use this script to manage the database and banking details

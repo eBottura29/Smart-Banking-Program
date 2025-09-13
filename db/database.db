@@ -1,0 +1,8 @@
+{
+    "ADMIN": {
+        "password": "admin000",
+        "currency": "EUR",
+        "balance": 0,
+        "activated": True
+    }
+}

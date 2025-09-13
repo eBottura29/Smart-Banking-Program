@@ -1,0 +1,11 @@
+FEATURES (main.py):
+1. log in and stay logged in
+2. log out and stay logged out
+3. add/remove money from balance
+4. change currency and update balance according to currency
+
+FEATURES (admin.py):
+1. create account
+2. delete account
+3. activate/deactivate account
+4. change details of accounts from script

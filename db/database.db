@@ -1,9 +1,10 @@
 {
     "ADMIN": {
         "password": "admin000",
-        "currency": "USD",
-        "balance": 0,
-        "activated": True,
+        "currency": "EUR",
+        "balance": 0.0,
+        "activated": true,
+        "is_admin": true,
         "card": {
             "number": 4539657457661162,
             "expiration": "08/32",

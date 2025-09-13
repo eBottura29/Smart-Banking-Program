@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import os
 import json
 import datetime
+from pathlib import Path
 
 
 def fetch_and_store():
@@ -20,13 +21,14 @@ def fetch_and_store():
         raise Exception(f"API request failed: {data}")
 
     quotes = data["quotes"]
-
     now = datetime.datetime.utcnow().isoformat()
 
-    # Prepare cleaned dictionary: {"EUR": 0.94, "GBP": 0.86, ...}
     cleaned = {"last_updated": now, "base": "USD", "rates": {currency[3:]: rate for currency, rate in quotes.items()}}
 
-    with open("./db/currency.db", "w") as f:
+    BASE = Path(__file__).resolve().parent
+    db_dir = BASE.parent / "db"
+    db_dir.mkdir(parents=True, exist_ok=True)
+    with open(db_dir / "currency.db", "w") as f:
         json.dump(cleaned, f, indent=4)
 
     print("Rates successfully stored in currency.db")

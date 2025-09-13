@@ -1,4 +1,4 @@
 {
-    "logged in": False,
-    "account": ""
+    "logged in": true,
+    "account": "ADMIN"
 }

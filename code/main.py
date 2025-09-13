@@ -9,7 +9,7 @@ def user_menu():
         ipt = int(ipt)
     except ValueError:
         print("Please enter a valid number.")
-        return user_menu()
+        return 0
     return ipt
 
 
